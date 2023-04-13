@@ -27,39 +27,6 @@ elBody.addEventListener("click", evt => {
         }
     }
 });
-// userForm.addEventListener("submit", async evt => {
-
-//     evt.preventDefault()
-
-//     let { user_name, user_username, user_address } = evt.target.elements
-
-//     let Obj = {
-//         name: user_name.value,
-//         username: user_username.value,
-//         address: {
-//             city: user_address.value,
-//         },
-//     };
-
-//     let result = await Api.POST("users", Obj);
-//     console.log(result);
-//     if (result) {
-//         let userData = await Api.GET("users");
-//         let newData = [result, ...userData];
-//         renderUsers(newData, users);
-
-//         userForm.classList.remove("class", "d-flex");
-//         userForm.classList.add("class", "d-none");
-//     };
-// });
-
-
-
-
-
-
-
-
 
 
 //    Render Funksiya
@@ -172,4 +139,19 @@ userAddForm.addEventListener("submit", async (evt) => {
     // renderFunc(cardList, "users")
 });
 
+
+
+let searchInput = document.querySelector("#search")
+
+searchInput.addEventListener("input", async (evt) => {
+    const inputValue = evt.target.value.toLowerCase()
+    console.log(inputValue);
+    let data = await Api.GET("users");
+    data = data.filter((user) => user.name.toLowerCase().includes(inputValue))
+    console.log(data);
+    cardList.textContent = null
+    renderFunc(cardList, data)
+
+
+})
 

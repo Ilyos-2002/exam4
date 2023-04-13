@@ -22,7 +22,15 @@
         </div>
     </header>
     <main class=" mx-auto">
-        <section class="flex justify-end items-center py-5 px-10   ">
+        <section class="flex justify-between items-center py-5 px-10   ">
+            <form>
+                <label class="relative" for="search">
+                    <input id="search" type="text" placeholder="Search.."
+                        class=" px-3 py-1 border rounded-md border-3 outline-none ">
+                    <img class="absolute top-0 end-2" src="./img/search.svg" alt="search" width="20" height="20">
+                </label>
+            </form>
+
             <button class="uppercase text-md text-white bg-indigo-700 p-2 rounded-md hover:bg-indigo-500">+Add user
             </button>
 
@@ -67,7 +75,7 @@
                 <p class="w-[100px ] uppercase p-1 mr-4">street</p>
                 <p class="w-[100px] uppercase">action</p>
             </div>
-            <ul id="cardList" class="inline-block mx-auto">
+            <ul id="cardList" class="inline-block mx-auto gap-5 pointer w-full">
 
                 <!-- <li class="flex gap-4 px-4 py-2">
                     <h3 class="w-[255px] p-1">lasfsfsfa</h3>
@@ -99,7 +107,9 @@
 
 
 
-    <footer>Cite Created <a href="email:ilyosxolmamtov3@gmail.com">Xolmamatov Ilyos</a></footer>
+    <footer class="absolute bottom-0 align-center">Cite Created <a href="email:ilyosxolmamtov3@gmail.com">Xolmamatov
+            Ilyos</a>
+    </footer>
 
 
 
