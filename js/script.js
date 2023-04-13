@@ -115,8 +115,8 @@ userAddForm.addEventListener("submit", async (evt) => {
     evt.preventDefault();
     let { Enter_name, Enter_ID, Enter_Zip_Code, Enter_Username, Call_number, Email, Enter_City, Street } = evt.target.elements
     let newUser = {
-        name: `${Enter_name.value.trim()}`,
         id: `${Enter_ID.value.trim()}`,
+        name: `${Enter_name.value.trim()}`,
         address: {
             zipcode: `${Enter_Zip_Code.value.trim()}`,
             city: `${Enter_City.value.trim()}`,
@@ -126,7 +126,8 @@ userAddForm.addEventListener("submit", async (evt) => {
         phone: `${Call_number.value.trim()}`,
         email: `${Email.value.trim()}`,
     };
-    let addUserApi = await Api.POST("posts", newUser);
+    let addUserApi = await Api.POST("users", newUser);
+    console.log(addUserApi);
     if (addUserApi) {
         // let postData = await Api.GET("users");
         let newData = [addUserApi, ...data];
