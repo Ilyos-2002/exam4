@@ -4,6 +4,7 @@ let elBody = document.getElementById("body");
 let elLogOut = document.getElementById("logOut");
 let cardList = document.getElementById("cardList");
 let userAddForm = document.getElementById("userAddForm");
+let admin = document.getElementById("admin");
 
 //log in 
 let token = localStorage.getItem("token") || false
@@ -54,14 +55,14 @@ async function renderFunc(element, data) {
             let newbtnDelete = document.createElement("button")
 
             newLi.dataset.id = user.id;
-            newLi.setAttribute("class", "flex  items-center gap-4 px-4 py-2  border border-t-2 ")
-            newh3Name.setAttribute("class", "w-[255px] p-1")
-            newpId.setAttribute("class", "w-[60px ] p-1 mr-2")
+            newLi.setAttribute("class", "flex  items-center justify-between gap-4 px-4 py-2  border border-t-2 ")
+            newh3Name.setAttribute("class", "w-[200px] p-1")
+            newpId.setAttribute("class", "w-[60px ] mr-5 p-1 mr-2")
             newpZipCode.setAttribute("class", "w-[120px] p-1")
             newh4UserName.setAttribute("class", "w-[200px] p-1")
-            newh5City.setAttribute("class", "w-[120px] p-1")
+            newh5City.setAttribute("class", "w-[160px]  p-1")
 
-            newspanEmailCallSpan.setAttribute("class", "w - [100px] flex items - center gap - 2")
+            newspanEmailCallSpan.setAttribute("class", "w - [120px] flex items - center gap - 2")
             newaCall.setAttribute("class", "bg-gray-300 rounded-full p-1 hover:bg-gray-400")
             newaCallImg.setAttribute("src", "./img/Vector.svg")
             newaCallImg.setAttribute("width", "20px")
@@ -71,8 +72,8 @@ async function renderFunc(element, data) {
             newaEmailImg.setAttribute("width", "20px")
             newaEmailImg.setAttribute("height", "20px")
 
-            newpStreet.setAttribute("class", "w-[100px] p-1")
-            newbtnDelete.setAttribute("class", "w-[100px] uppercase bg-red-600 rounded-md text-white hover:text-red-600 hover:bg-red-300")
+            newpStreet.setAttribute("class", "w-[120px] p-1")
+            newbtnDelete.setAttribute("class", "w-[120px] uppercase bg-red-600 rounded-md text-white hover:text-red-600 hover:bg-red-300")
 
             newh3Name.textContent = user.name
             newpId.textContent = user.id
@@ -137,7 +138,8 @@ userAddForm.addEventListener("submit", async (evt) => {
         userAddForm.classList.remove("class", "flex");
         userAddForm.classList.add("class", "hidden");
     }
-    // renderFunc(cardList, "users")
+
+
 });
 
 

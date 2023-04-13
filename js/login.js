@@ -1,4 +1,5 @@
-let elForm = document.querySelector("#loginForm")
+let elForm = document.querySelector("#loginForm");
+
 
 
 elForm.addEventListener("submit", async (evt) => {

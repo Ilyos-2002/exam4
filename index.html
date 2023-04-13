@@ -10,19 +10,19 @@
 
 </head>
 
-<body id="body" class="box-border container-xl w-[1425px] mx-auto">
+<body id="body" class="box-border container-xl w-[px] mx-auto px-5 py-2 bg-gray-100 ">
 
-    <header class="flex justify-between items-center py-5 px-10 w-full mx-auto">
+    <header class="flex justify-between items-center py-5   mx-auto">
         <h2 class="text-3xl text-indigo-700">Users </h2>
         <div class="flex items-center gap-4">
-            <h2 class="text-bold ">Admin</h2>
+            <h2 id="admin" class="text-bold ">Admin</h2>
             <button id="logOut" type="submit"
                 class="uppercase text-md text-white bg-indigo-700 p-2 rounded-md hover:bg-indigo-500  ">log
                 out</button>
         </div>
     </header>
     <main class=" mx-auto">
-        <section class="flex justify-between items-center py-5 px-10   ">
+        <section class="flex justify-between items-center py-5   ">
             <form>
                 <label class="relative" for="search">
                     <input id="search" type="text" placeholder="Search.."
@@ -66,15 +66,15 @@
             </form>
         </div>
         <section>
-            <div class="flex items-center gap-4 px-4 py-2 border border-y-2 ">
-                <h3 class="w-[255px] p-1 uppercase">name</h3>
-                <p class="w-[25px] p-1 uppercase">id</p>
+            <div class="flex items-center justify-between gap-4 px-4 py-2 border border-y-2 ">
+                <h3 class="w-[200px] p-1 uppercase">name</h3>
+                <p class="w-[50px] p-1 uppercase">id</p>
                 <p class="w-[120px] p-1 uppercase">zipcode</p>
                 <h4 class="w-[200px] p-1 uppercase">user name</h4>
-                <h5 class="w-[100px] p-1 uppercase mr-1">city</h5>
-                <p class="w-[100px] uppercase p-1  ">contact</p>
-                <p class="w-[100px ] uppercase p-1 mr-4">street</p>
-                <p class="w-[100px] uppercase">action</p>
+                <h5 class="w-[120px] p-1 uppercase mr-1">city</h5>
+                <p class="w-[120px] uppercase p-1  ">contact</p>
+                <p class="w-[120px ] uppercase p-1 mr-4">street</p>
+                <p class="w-[120px] uppercase">action</p>
             </div>
             <ul id="cardList" class="inline-block mx-auto gap-5 pointer w-full">
 
@@ -108,7 +108,9 @@
 
 
 
-    <footer class="mt-10">Cite Created <a href="email:ilyosxolmamtov3@gmail.com">Xolmamatov Ilyos</a></footer>
+    <footer class="mt-10 bg-indigo-600 text-white inline-block p-3 rounded-md hover:">Cite Created <a
+            href="mailto:ilyosxolmamtov3@gmail.com">Xolmamatov
+            Ilyos</a></footer>
 
 
 
