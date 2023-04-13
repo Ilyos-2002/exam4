@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam 4 month</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body id="body" class="box-border container-xl">
+
+    <header class="flex justify-between items-center py-5 px-10 w-full mx-auto">
+        <h2 class="text-3xl text-indigo-700">Users </h2>
+        <div class="flex items-center gap-4">
+            <h2>Admin</h2>
+            <button id="logOut" type="submit"
+                class="uppercase text-md text-white bg-indigo-700 p-2 rounded-md hover:bg-indigo-500  ">log
+                out</button>
+        </div>
+    </header>
+    <main class=" mx-auto">
+        <section class="flex justify-end items-center py-5 px-10   ">
+            <button class="uppercase text-md text-white bg-indigo-700 p-2 rounded-md hover:bg-indigo-500">+Add user
+            </button>
+
+            <div>
+                <form id="userAddForm"
+                    class=" hidden flex-col justify-center items-center fixed bg-black top-0 bottom-0 w-[300px] p-5 end-0 z-2 border border-2  p-3 gap-2">
+                    <h2 class="text-white text-xl">Add user</h2>
+                    <input name="Enter_name" type="text" placeholder="Enter name" minlength="2"
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <input name="Enter_ID" type="number" placeholder="Enter ID" minlength="2"
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <input name="Enter_Zip_Code" type="nuber" placeholder="Enter Zip-Code" minlength="4"
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <input name="Enter_Username" type="text" placeholder="Enter Username" minlength="3"
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <input name="Enter_City" type="text" placeholder="Enter City"
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <input name="Call_number" type="text" placeholder="Call number"
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <input name="Email" type="text" placeholder="Email "
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <input name="Street" type="text" placeholder="Street "
+                        class=" rounded-md px-3 py-1 outline-none hover:bg-blue-100   border  border-2">
+                    <span class="flex justify-between gap-8">
+                        <button type="submit"
+                            class="uppercase text-md text-white bg-indigo-700 p-2 rounded-md hover:bg-indigo-500">Submit</button>
+                        <button type="submit"
+                            class="uppercase text-md text-white bg-indigo-700 p-2 rounded-md hover:bg-indigo-500">Close</button>
+
+                    </span>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="flex items-center gap-4 px-4 py-2 border border-y-2 ">
+                <h3 class="w-[255px] p-1 uppercase">name</h3>
+                <p class="w-[25px] p-1 uppercase">id</p>
+                <p class="w-[120px] p-1 uppercase">zipcode</p>
+                <h4 class="w-[200px] p-1 uppercase">user name</h4>
+                <h5 class="w-[100px] p-1 uppercase mr-1">city</h5>
+                <p class="w-[100px] uppercase p-1  ">contact</p>
+                <p class="w-[100px ] uppercase p-1 mr-4">street</p>
+                <p class="w-[100px] uppercase">action</p>
+            </div>
+            <ul id="cardList" class="inline-block mx-auto">
+
+                <!-- <li class="flex gap-4 px-4 py-2">
+                    <h3 class="w-[255px] p-1">lasfsfsfa</h3>
+                    <span class="w-[60px p-1]">454</span>
+                    <p class="w-[120px] p-1">198461654</p>
+                    <h4 class="w-[200px] p-1">usedasfr name</h4>
+                    <h5 class="w-[100px] p-1">cifsafty</h5>
+                    <span class="w-[100px] flex items-center gap-2">
+                        <a class="bg-gray-300 rounded-full p-1 hover:bg-gray-400" href="">
+                            <img src="./img/Vector.svg" width="20" height="20" alt="Call">
+                        </a>
+                        <a class="bg-gray-300 rounded-full p-1 hover:bg-gray-400" href="">
+                            <img src="./img/Email.svg" width="20" height="20" alt="email">
+                        </a>
+                    </span>
+                    <p class="w-[100px] p-1">strfaseet</p>
+                    <button
+                        class="w-[100px] uppercase bg-red-600 rounded-md text-white hover:text-red-600 hover:bg-red-300"
+                        type="submit">delete</button>
+                </li> -->
+            </ul>
+        </section>
+        <section>
+
+        </section>
+    </main>
+
+
+
+
+
+    <footer>Cite Created <a href="email:ilyosxolmamtov3@gmail.com">Xolmamatov Ilyos</a></footer>
+
+
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+
+
+</html>
